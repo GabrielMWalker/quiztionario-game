@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
         PickedAnswers = new List<AnswareData>();
     }
-
+    
     void Display()
     {
         EraseAnswers();
