@@ -37,6 +37,8 @@ public class MouseTrigger : MonoBehaviour
 		textQuest.text = perguntas[0];
 		score = 0;
 		perguntaAtual = 0;
+		resultText.text = "Sua resposta da questão * está:";
+		answerResult.text = "Calculando...";
 	}
 
     void Start()
@@ -69,7 +71,6 @@ public class MouseTrigger : MonoBehaviour
             {
 				score += 10;
 				answerResult.text = "Correta";
-				print(score);
 			}
             else
             {
@@ -88,7 +89,6 @@ public class MouseTrigger : MonoBehaviour
 			{
 				score += 10;
 				answerResult.text = "Correta";
-				print(score);
 			}
 			else
 			{
